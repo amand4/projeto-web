@@ -1,0 +1,579 @@
+body{
+    position: relative;
+    }
+    .nav {
+    font-family: 'Courier New', monospace;
+    width: 100%;
+    background: #009FFF;
+    background: -webkit-linear-gradient(to right, #72c3c7, #3ab8e9);
+    background: linear-gradient(to right, #72c3c7, #3ae9ad);
+    min-height: 60px;
+    padding: 10px;
+    }
+    .nav .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    }
+    .nav .container h1 {
+    color : #fff;
+    font-size: 20px;
+    }
+    .nav .container .logo {
+    flex-grow: 1;
+    }
+    .nav .container .menu ul {
+    display: flex;
+    }
+    .nav .container .menu ul li {
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 15px;
+    border-bottom: 1px solid transparent;
+    list-style: none;
+    }
+    .nav .container .menu ul li a {
+    color: white!important;
+    text-decoration: none!important;
+    }
+    .nav .container .menu > ul li a:hover {
+    transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    border-bottom: 1px solid #fff;
+    }
+    /* CSS PÁGINA DE LOGIN*/
+    figure{
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    figure img{
+    width: 100%;
+    max-width: 85px;
+    display: block;
+    margin: 0 auto;
+    }
+    .background.login {
+    background-image: url(../img/background-whatsapp-.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    }
+    section{
+    position: relative;
+    }
+    section .content{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    width: 100%;
+    max-width: 450px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 34px 34px 61px;
+    box-sizing: border-box;
+    }
+    .background.register section .content{
+    background-color: #fff;
+    border: 2px solid #5b9b0c;
+    }
+    section .content .title, section .content p{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    text-align: center;
+    }
+    section .content p{
+    font-size: 16px;
+    font-weight: 200;
+    }
+    section .content input{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    outline: none;
+    color: #8c8c8c;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    height: 50px;
+    margin: 0;
+    font-size: 16px;
+    margin: 0 0 16px;
+    }
+    section .content a{
+    margin: 40px 0 12px;
+    background-color: #5b9b0c00;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 20px;
+    width: 90%;
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #5b9b0c;
+    margin: 0 auto;
+    }
+    section .content a:hover{
+    background-color: #62a715fc;
+    text-decoration:none;  
+    }
+    .register  section .content a{
+    border: 1px solid #007bff;
+    }
+    .register section .content a:hover{
+    background-color: #007bff91;
+    }
+    .background.register section .content{
+    background-color: transparent; 
+    border: 2px solid #5b9b0c;
+    }
+    .register section .content .title, .register section .content .title, .register section .content p{ 
+    color: #5b9b0c;
+    }
+    .register section .content a{
+    background-color: #5b9b0c ;
+    border: 1px solid #5b9b0c;
+    }
+    .form-user{
+    position: absolute;
+    top: 14%;left: 50%;
+    width: 100%;
+    max-width: 700px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 4px;
+    padding: 80px 80px 160px;
+    box-sizing: border-box;
+    border: 5px solid rgb(80 152 136);
+    }
+    .form-user h1{
+    text-align: center;
+    color: #509888;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    }
+    .form-user form{
+    }
+    .form-user form .form-group{
+    border-bottom: 2px solid #509888;
+    }
+    .form-user form .form-group label{
+    display: none;
+    }
+    .form-user form .form-group input, .form-user form input{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    outline: none;
+    color: #509888;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    height: 46px;
+    margin: 0;
+    font-size: 16px;
+    margin: 0 0 3px;
+    text-align: center;
+    }
+    .form-user form  input[type="submit"]{
+    margin: 40px 0 12px;
+    background-color: #509888;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    }
+    .form-user form .form-group.has-error{
+    border: none;
+    }
+    .form-user p a{
+    color: #919191;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    float: right;
+    }
+    .form-user p a:hover{
+    color: blue;
+    text-decoration: underline;   
+    }	
+    /* CSS PÁGINA DE MENSAGENS*/
+    section.app_chat{
+    overflow: hidden;
+    overflow: hidden;
+    }
+    section.app_chat header{
+    background: #ededed;
+    border-bottom: solid #ebebeb 1px;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+    }
+    section.app_chat header figure{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    }
+    section.app_chat header figure img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 15px;
+    }
+    section.app_chat header .app_chat_nav{
+    float: right;
+    }
+    section.app_chat header .app_chat_nav ul{
+    list-style: none;
+    }
+    section.app_chat header .app_chat_nav ul li{
+    display: inline-block;
+    }
+    section.app_chat header .app_chat_nav ul li button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    }
+    section.app_chat header .app_chat_nav ul li button svg{
+    }
+    section.app_chat header .app_chat_nav ul li button svg path{
+    fill:#919191;
+    }
+    section.app_chat form{
+    background-color: #e5ddd5;
+    position: relative;
+    height: 687px;
+    padding-top: 10px;
+    overflow-y: scroll;
+    background-image: url("../img/fundo (1).png");
+    padding-bottom: 30px;
+    }
+    section.app_chat form .app_chat_mensagem{
+    width: 80%;
+    max-width: 970px;
+    margin:0 auto;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5px;
+    }
+    section.app_chat form .app_chat_mensagem ul{
+    list-style: none;
+    padding: 0;
+    }
+    section.app_chat form .app_chat_mensagem ul li{
+    padding: 6px 60px 8px 9px;
+    background-color: #fff;
+    border-radius: 7.5px;
+    border-top-left-radius: 7.5;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2px;
+    }
+    section.app_chat form  ul li small{
+    display: none;
+    }
+    section.app_chat form  ul li:nth-last-child(1) small{
+    position: absolute;
+    left: -8px;
+    top: 0;
+    display: block;
+    }
+    section.app_chat form .app_chat_mensagem ul li small svg{
+    }
+    section.app_chat form ul li small svg path{
+    fill: #fff;
+    }
+    section.app_chat form .app_chat_mensagem_rementente{
+    }
+    section.app_chat form .app_chat_mensagem_rementente ul{
+    }
+    section.app_chat form .app_chat_mensagem_rementente ul li{
+    }
+    section.app_chat form .app_chat_mensagem_rementente ul li small{
+    position: absolute;
+    right: -8px;
+    top: 0;
+    }
+    section.app_chat form .app_chat_mensagem_rementente ul li span{
+    height: 15px;
+    color: #00000073;
+    font-size: 11px;
+    line-height: 15px;
+    white-space: nowrap;
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+    }
+    section.app_chat form .app_chat_mensagem_destinatario.app_chat_mensagem  li small{
+    position: absolute;
+    right: -8px;
+    top: 0;
+    display: none;
+    }
+    section.app_chat form{
+    }
+    section.app_chat form .app_chat_mensagem_destinatario{
+    }
+    section.app_chat form .app_chat_mensagem_destinatario ul{
+    text-align: right;
+    }
+    section.app_chat form .app_chat_mensagem_destinatario ul li{
+    background-color: #dbf6c5;
+    }
+    section.app_chat form .app_chat_mensagem_destinatario ul li span{
+    height: 15px;
+    color: #00000073;
+    font-size: 11px;
+    line-height: 15px;
+    white-space: nowrap;
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+    }
+    section.app_chat footer{
+    position: absolute;
+    bottom: -1px;
+    background: #ededed;
+    width: 100%;
+    z-index: 2;
+    padding: 15px;
+    }
+    section.app_chat footer .app_chat_submit{
+    display: flex;
+    }
+    section.app_chat footer .app_chat_submit .app_chat_submit_button{
+    width: 10%;
+    text-align: center;
+    }
+    section.app_chat footer .app_chat_submit .app_chat_submit_button button{
+    border: none;
+    outline: none;
+    }
+    section.app_chat footer .app_chat_submit .app_chat_submit_button svg{
+    }
+    section.app_chat footer .app_chat_submit .app_chat_submit_button svg path{
+    fill: #919191;
+    }
+    section.app_chat footer .app_chat_submit .app_chat_submit_form{
+    width: 80%;
+    }
+    section.app_chat footer .app_chat_submit .app_chat_submit_form input{
+    outline: none;
+    border: none;
+    height: 30px;
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0 10px;
+    }
+    div.app div.row section.app_header{
+    }
+    div.app div.row section.app_header{
+    background: #ededed;
+    border-bottom: solid #ebebeb 1px;
+    }
+    div.app div.row section.app_header div.app_perfil{
+    display: flex;
+    justify-content: center;
+    }
+    div.app div.row section.app_header div.app_perfil figure{
+    padding: 15px;
+    margin: 0;
+    flex: 60%;
+    }
+    div.app div.row section.app_header div.app_perfil figure img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    }
+    div.app div.row section.app_header div.app_perfil nav{
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }	
+    div.app div.row section.app_header div.app_perfil nav a{
+    color: #919191;
+    text-decoration: none;
+    display: block;
+    padding: 0 8px;
+    }
+    div.app div.row section.app_header div.app_pesquisa{
+    background-color: #f7f7f7;
+    padding: 10px;
+    position: relative;
+    }
+    div.app div.row section.app_header div.app_pesquisa  input{
+    outline: none;
+    }
+    div.app div.row section.app_header div.app_pesquisa  input[type="text"]{
+    border: none;
+    background: #fff;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    height: 32px;
+    padding: 0 20px;
+    border-radius: 20px;
+    padding-left: 50px;
+    }
+    div.app div.row section.app_header div.app_pesquisa  button{
+    color: #919191;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    outline: none;
+    }
+    div.app div.row section.app_contatos{
+    }
+    div.app div.row section.app_contatos ul li{
+    padding: 10px;
+    border-bottom: solid #ebebeb 1px;
+    cursor: pointer;
+    list-style: none;
+    }
+    div.app div.row section.app_contatos ul li:hover{
+    background-color: #ededed;
+    }
+    div.app div.row section.app_contatos ul li div.row{
+    }
+    div.app div.row section.app_contatos ul li div.row .col-xs-2{
+    padding-right: 10px;
+    flex: 10%;
+    }
+    div.app div.row section.app_contatos ul li div.row .col-xs-10{
+    flex: 90%;
+    }
+    div.app div.row section.app_contatos ul li div.row div.app_foto_contato{
+    }
+    div.app div.row section.app_contatos ul li div.row div.app_foto_contato figure{
+    }
+    div.app div.row section.app_contatos ul li div.row div.app_foto_contato figure img{
+    width: 49px;
+    height: 49px;
+    border-radius: 100%;
+    }
+    div.app div.row section.app_contatos ul li div.row div.app_info_conato{
+    }
+    div.app div.row section.app_contatos ul li div.row div.app_info_conato h2{
+    color: #000000cc;
+    font-size: 18px;
+    font-weight: 500;
+    }
+    div.app div.row section.app_contatos ul li div.row div.app_info_conato p{
+    color: #000000cc;
+    font-weight: 500;
+    font-size: 14px;
+    }
+    div.app div.row section.app_contatos ul li div.row  .app_navegacao_contato{
+    float: right;
+    text-align: right;
+    }
+    div.app div.row section.app_contatos ul li div.row  .app_navegacao_contato span{
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    margin-bottom: 5px;
+    }
+    div.app div.row section.app_contatos ul li div.row  .app_navegacao_contato button{
+    background-color: #06d755;
+    color: #fff;
+    width: 160px;
+    height: 45px;
+    border-radius: 4%;
+    text-align: center;
+    line-height: 42px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    border: none;
+    }
+    div.app div.row section.app_contatos ul li div.row  .app_navegacao_contato button.add_exist{
+        background-color: #246dce;
+
+    }
+    div.app div.row section.app_header h1{
+    padding: 15px;
+    color: #509888;
+    width: 100%;
+    text-align: center;
+    }
+    div.app_pesquisa{
+    background-color: #f7f7f7;
+    padding: 10px 0;
+    position: relative;
+    }
+    div.app_pesquisa  input{
+    outline: none;
+    }
+    div.app_pesquisa  input[type="text"]{
+    border: none;
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    height: 32px;
+    padding: 0 20px;
+    }
+    div.app_pesquisa  button{
+    color: #919191;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 40px;
+    right: 16px;
+    outline: none;
+    }
+    .app_contatos .form_filter{
+    background-color: #f7f7f7;
+    padding: 25px;
+    font-size: 14px;
+    }
+    .form-control:focus{
+    border-color: #509888!important;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(80 152 136)!important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(80 152 136)!important;
+    }
+    .app_contatos.filter .button{
+    padding: 11px 12px;
+    width: 20%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    }
+    .result_filter{
+    padding: 20px 30px;
+    font-size: 12px;
+    }
+    div.app div.row section.app_header h1{
+    padding: 15px;
+    color: #509888;
+    width: 100%;
+    text-align: center;
+    }
+    
+    
